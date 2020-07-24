@@ -36,17 +36,17 @@ TweenMax.to(".overlay h1", 2, {
 
 // // //   visit counter
 
-// const countEl = document.getElementById('count');
+ const countEl = document.getElementById('count');
 
-//  updateVisiCount();
+  updateVisiCount();
 
-//  function updateVisiCount() {
-//       fetch('https://api.countapi.xyz/update/Jalmogela/portfolio/?amount=1')
-//       .then(res => res.json())
-//       .then(res =>{
-//           countEl.innerHTML = res.value;
-//       });
-//   }
+  function updateVisiCount() {
+       fetch('https://api.countapi.xyz/update/Jalmogela/portfolio/?amount=1')
+       .then(res => res.json())
+       .then(res =>{
+           countEl.innerHTML = res.value;
+       });
+   }
 
 
 //scroll reveal
