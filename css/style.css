@@ -1,0 +1,633 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* this is >>>> basic style of my text and desing */
+
+.p-title {
+  font-size: 15pt;
+  font-family: monospace;
+  font-weight: 500;
+  padding: 10px;
+}
+
+.h2-title {
+  font-family: monospace;
+  font-size: 22pt;
+  text-align: center;
+  font-weight: bold;
+}
+
+.h2-title::first {
+  display: none;
+}
+
+.hr-title {
+  border: 1px solid black;
+  height: 1px;
+  background-color: black;
+  width: 120px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+}
+
+.body-hr {
+  margin-top: 50px;
+  width: 600px;
+  margin: auto;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+#about-me {
+  padding-top: 130px;
+}
+
+/* this is >>>> basic style of my text and desing */
+/* about styling */
+.about-sent {
+  text-align: center;
+  padding: 10px;
+  font-size: 14pt;
+  font-family: monospace;
+  position: relative;
+  visibility: hidden;
+}
+
+.about-me {
+  display: flex;
+}
+
+.img-box {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.img-box img {
+  width: 350px;
+  border-radius: 20px;
+  height: 350px;
+}
+
+.status-info-container {
+  padding: 5px;
+
+}
+
+.status-info {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: monospace;
+
+}
+
+.status-info h5 {
+  font-weight: bold;
+  font-size: 12pt;
+}
+
+/* background-header style */
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: #0984e3;
+  top: 0%;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+.overlay h1 {
+  font-size: 100px;
+  letter-spacing: 20px;
+  color: white;
+
+}
+
+.overlay span {
+  font-size: 30px;
+  letter-spacing: 3px;
+  color: white;
+}
+
+.background-header {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: auto;
+  padding: 50px;
+  background: black;
+  position: relative;
+  top: 5px;
+
+}
+.background-header img {
+  padding: 10px;
+  width: 300px;
+  height: 300px;
+  position: relative;
+  top: 10%;
+ 
+}
+.scrolldown {
+  width: 100%;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 5%;
+}
+
+.scrolldownx {
+  text-align: center;
+  margin: 0 auto 15px;
+  text-align: center;
+  max-width: 600px;
+  position: relative;
+  color: white;
+  font-family: monospace;
+  transform: rotate(-90deg);
+}
+
+.scrolldownx::before {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 2px;
+  background: white;
+  position: absolute;
+  top: 50%;
+  left: -90%;
+
+}
+
+
+/* end point of style of  background-header */
+/* backgroud visit style */
+.visit-container {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  
+
+}
+
+.counter {
+  margin: 0 auto 15px;
+  text-align: center;
+  max-width: 600px;
+  position: relative;
+  color: white;
+  font-family: monospace;
+}
+
+.counter::before {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 2px;
+  background: white;
+  position: absolute;
+  top: 50%;
+  left: 30%;
+}
+
+.counter::after {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 2px;
+  background: white;
+  position: absolute;
+  top: 50%;
+  right: 30%;
+
+}
+
+/* end of visit counter page */
+/* scroll header start hear */
+
+
+
+
+/* img center logo on background header style start */
+
+/* navigator style start */
+
+  nav {
+    width: 100%;
+    background-color: black;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+
+
+
+  }
+
+  nav>a img {
+    width: 90px;
+    height: 90px;
+    padding: 10px;
+  }
+
+  .nav-a {
+    margin: 40px;
+    text-transform: uppercase;
+    text-decoration: none !important;
+    color: white;
+    font-family: monospace;
+    font-weight: bold;
+    padding: 5px;
+    transition: 0.2s;
+
+  }
+
+  .nav-a:hover {
+    border-bottom: 1px solid white;
+    color: white;
+  }
+
+  /* end point of my navigator */
+  /* start point of my skills */
+  .skills {
+    text-align: center;
+    font-size: 14pt;
+    list-style: none;
+    padding: 10px;
+    font-family: monospace;
+    list-style: "→";
+    font-weight: bold;
+    overflow: hidden;
+
+  }
+
+  .skills li {
+    margin: auto;
+    padding: 10px;
+    text-transform: capitalize;
+
+  }
+
+  .skilist {
+    visibility: hidden;
+  }
+
+  /* ending point of my skills */
+  /* project filter style css  start*/
+  .filter-projects {
+    padding-top: 20px;
+  }
+
+  ul.filters {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 30px 0;
+  }
+
+  ul.filters>li {
+    list-style: none;
+    display: inline-block;
+    font-family: monospace;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 13pt;
+  }
+
+  ul.filters>li>a {
+    display: block;
+    color: #434e5e;
+    text-decoration: none;
+    padding: 5px 20px;
+  }
+
+  ul.filters>li>a:hover {
+    background-color: #e6e9ed;
+  }
+
+  ul.filters>li.active>a {
+    color: white;
+    background-color: #0984e3;
+
+  }
+
+  .card {
+    position: relative;
+    margin-bottom: 50px;
+    color: #000;
+    border-radius: 0;
+    border: 1px solid #eee;
+    background-color: #fff;
+    box-shadow: 1px 1px 1.5px rgba(0, 0, 0, 0.075);
+  }
+
+  .card-head {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    -webkit-transition: ease-in-out 0.2s;
+    -moz-transition: ease-in-out 0.2s;
+    -ms-transition: ease-in-out 0.2s;
+    transition: ease-in-out 0.2s;
+
+  }
+
+  .card-hover {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0984e3;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 30px;
+    -webkit-transition: ease-in-out 0.2s;
+    -moz-transition: ease-in-out 0.2s;
+    -ms-transition: ease-in-out 0.2s;
+    transition: ease-in-out 0.2s;
+    text-align: center;
+
+  }
+
+  .card-body {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+
+
+  .card-btn {
+    margin-bottom: -40px;
+    font-size: 0.9rem;
+    background-color: #fff;
+    color: #222;
+    border: 1px solid #eee;
+    border-radius: 0;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .card-btn:hover {
+    background-color: #0984e3;
+    color: black;
+
+  }
+
+  /* ending of project filter  style */
+  /* contact form style start */
+  .contact-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: black;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+
+  }
+
+  input[type="text"]::placeholder {
+    text-align: center;
+    text-transform: capitalize;
+    font-family: monospace;
+  }
+
+  input[type=text],
+  select,
+  textarea {
+    width: 380px;
+    /* Full width */
+    padding: 12px;
+    /* Some padding */
+    border: 2px solid #74b9ff;
+    /* Gray border */
+    border-radius: 4px;
+    /* Rounded borders */
+    box-sizing: border-box;
+    /* Make sure that padding and width stays in place */
+    margin-top: 6px;
+    /* Add a top margin */
+    margin-bottom: 16px;
+    /* Bottom margin */
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+    font-family: monospace;
+    resize: vertical
+      /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+
+  textarea {
+    border: 2px solid #74b9ff;
+
+  }
+
+  /* button style and hover */
+  .send-button {
+    margin-top: 15px;
+    height: 34px;
+    width: 380px;
+    overflow: hidden;
+    transition: all .2s ease-in-out;
+  }
+
+  .button {
+    width: 380px;
+    height: 34px;
+    transition: all .2s ease-in-out;
+
+
+  }
+
+  .send-text {
+    display: block;
+    margin-top: 5px;
+    font: 300 14px 'Lato', sans-serif;
+    letter-spacing: 2px;
+    margin-right: 34px;
+
+
+  }
+
+  .fa-paper-plane {
+    margin-right: 34px;
+
+  }
+
+  .button:hover {
+    transform: translate3d(0px, -29px, 0px);
+  }
+
+  /* ending button style and hover */
+
+  /* right side container stlye */
+  .direct-contact-container {
+    max-width: 400px;
+    float: right;
+    margin-top: 5px;
+    padding: 5px;
+    padding-top: 100px;
+
+  }
+
+  /* Location, Phone, Email Section */
+  .contact-list {
+    list-style-type: none;
+
+
+
+  }
+
+  .list-item {
+    line-height: 4;
+    color: white;
+
+  }
+
+  .contact-text {
+    font: 300 18px ' monospace', monospace;
+    letter-spacing: 1.9px;
+    color: #bbb;
+  }
+
+  .place {
+    margin-left: 62px;
+  }
+
+  .phone {
+    margin-left: 56px;
+  }
+
+  .gmail {
+    margin-left: 53px;
+  }
+
+  .contact-text a {
+    color: #bbb;
+    text-decoration: none;
+    transition-duration: 0.2s;
+  }
+
+  .contact-text a:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .social-media-list {
+    position: relative;
+    font-size: 2.3rem;
+    text-align: center;
+    width: 100%;
+  }
+
+  .social-media-list li a {
+    color: #fff;
+
+  }
+
+  .social-media-list li {
+    position: relative;
+    top: 0;
+    display: inline-block;
+    height: 70px;
+    width: 70px;
+    margin: 10px auto;
+    line-height: 70px;
+    border-radius: 50%;
+    color: #fff;
+    background-color: rgb(27, 27, 27);
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+  }
+
+  .social-media-list li:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    border-radius: 50%;
+    opacity: 0;
+    box-shadow: 0 0 0 1px #fff;
+    transition: all .2s ease-in-out;
+  }
+
+  .social-media-list li:hover {
+    background-color: #fff;
+  }
+
+  .social-media-list li:hover:after {
+    opacity: 1;
+    transform: scale(1.12);
+    transition-timing-function: cubic-bezier(0.37, 0.74, 0.15, 1.65);
+  }
+
+  .social-media-list li:hover a {
+    color: #111;
+  }
+
+  hr {
+    border-color: rgba(255, 255, 255, .8);
+    ;
+  }
+
+
+  form input {
+    margin: 20px;
+  }

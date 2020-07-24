@@ -1,0 +1,43 @@
+@media(max-width:768px){
+    .nav-a{
+        margin: auto;
+    }
+    .contact-section{
+        flex-direction: column;
+    }
+    input[type=text], select, textarea{
+        width: 290px;
+        margin: auto;
+        display: flex;
+    }
+    
+    .send-button {
+        width: 290px;
+    }
+    .button{
+        width: 290px;
+    }
+    .send-text{
+        width: 290px;
+        margin-right:35px ;
+    }
+    .fa-paper-plane{
+        margin-right:35px ;
+    }
+    .direct-contact-container{
+        padding: 0;
+    }
+    .about-me{
+        flex-direction: column;
+    }
+    .overlay h1 {
+        font-size: 50px;
+    }
+    .counter::before{
+        left: 20%;
+    }
+    .counter::after{
+        right: 20%;
+    }
+
+}
