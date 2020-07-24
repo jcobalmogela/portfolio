@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
   
 }
 
@@ -143,7 +144,7 @@ html {
   padding: 50px;
   background: black;
   position: relative;
-  top: 5px;
+  
 
 }
 .background-header img {
@@ -194,9 +195,6 @@ html {
   width: 100%;
   position: absolute;
   top: 0;
-  overflow: hidden;
-  
-
 }
 
 .counter {

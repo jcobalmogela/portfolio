@@ -4,6 +4,7 @@
     }
     .contact-section{
         flex-direction: column;
+        padding: 25px;
     }
     input[type=text], select, textarea{
         width: 290px;
@@ -39,5 +40,6 @@
     .counter::after{
         right: 20%;
     }
+    
 
 }
