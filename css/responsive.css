@@ -40,6 +40,23 @@
     .counter::after{
         right: 20%;
     }
+    .filters{
+        font-size:2pt;
+       
+    }
+    .text-center{
+        font-size: 1pt;
+    }
+    ul.filters>li>a {
+        display: block;
+        color: #434e5e;
+        text-decoration: none;
+        margin: auto;
+        padding: 5px;
+        font-size: 12pt;
+        font-family: monospace;
+      }
+  
     
 
 }

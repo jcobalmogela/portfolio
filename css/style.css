@@ -50,7 +50,8 @@ html {
 }
 
 #about-me {
-  padding-top: 130px;
+  padding: 50px;
+ 
 }
 
 /* this is >>>> basic style of my text and desing */
@@ -66,6 +67,8 @@ html {
 
 .about-me {
   display: flex;
+  justify-content: center;
+  align-items: center; 
 }
 
 .img-box {
